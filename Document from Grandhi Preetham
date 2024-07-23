@@ -1,0 +1,493 @@
+print("                          welcome to python helpdesk.\U0001F600\U0001F600\U0001F600\U0001F600                           ")
+print("IN these helpdesk we will help you to get valid information about python methods as well as keywords,Which help u to achieve success.\U0001F601\U0001F601\U0001F601\U0001F601")
+print("Enter number 1 to get list methods[]:")
+print("Enter number 2 to get string methods'',"":")#for code which we use in programiz compiler
+print("Enter number 3 to get tuple methods():")
+print("Enter number 4 to get set methods{}:")
+print("Enter number 5 to get dictionary methods{}:")
+print("Enter number 6 to get file methods:")
+print("Enter number 7 to get python keywords:")
+print("Enter number 8 to get know about python exceptions:")
+print("Enter number 9 to get OOP'S Concepts:")
+print("Enter number 10 to get common functions in different methods:")
+print("NOTE: We included common functions in number 10.so,it is not displayed in first 8 numbers as it is common functons.\U0001f603\U0001F603\U0001F603\U0001F603")
+n=int(input("Enter any number from 1 to 10:"))
+if(n==1):
+    print("List is a collection which is ordered and changeable. Allows duplicate members.")
+    print("List1=[append,clear,copy,extend,insert,pop,remove,reverse,sort]")
+    stnr=str(input("Enter any keyword:"))
+    if stnr=="append":
+        print("It Adds an element at the end of the list.\nAppend takes one argument.")
+        print("Syntax:\nList.append(new item)")
+    elif stnr=="clear":
+        print("Removes all the elements from the list.\nClear takes no arguments.")
+        print("Syntax:\nList.clear()")
+    elif stnr=="copy":
+        print("Returns a copy of the list.\nCopy takes no arguments.")
+        print("Syntax:\nNewlist=oldlist.copy()")
+    elif stnr=="extend":
+        print("Add the elements of a list (or any iterable), to the end of the current list.\nExtend takes one argument.")
+        print("Syntax:\nlist1.extend(list2)")
+    elif stnr=="insert":
+        print("Adds an element at the specified position.\nInsert takes two arguments.")
+        print("Syntax:\nlist.insert(1,newitem).\nWhere 1 specifies the position for which u add the element.")
+    elif stnr=="pop":
+        print("Removes the element at the specified position.\nPop takes one argument.")
+        print("Syntax:\nlist.pop(1)\nWhere 1 specifies the position for which u want to remove the element.")
+    elif stnr=="remove":
+        print("Removes the item with the specified value.\nRemove takes one argument.")
+        print("Syntax:\nlist.remove(item in list)")
+    elif stnr=="reverse":
+        print("Reverses the order of the list.\nReverse takes one positional argument.")
+        print("Syntax:\nlist.sort(reverse = True)\nTrue,False are postional arguments.")
+    elif stnr=="sort":
+        print("Sorts the list ascending by default.\nSort takes no positional arguments.")
+        print("Syntax:\nlist.sort()\nThe sorting is done in alphabetical order.")
+    else:
+        print("IT is not a list keyword or method or it is a common function.\nFor common functions enter number 10.\U0001F621\U0001F621\U0001F621")
+if(n==2):
+    print("String is array of sequenced characters and is written inside single quotes, double quotes or triple quotes.\nString methods [capitalize,casefold,center,encode,endswitch,expandtabs,find,format,format_map,isupper,islower,join,upper,lower,replace,split,rsplit,splitines,strip,swapcase,title,translate,,zfill]")
+    stnr=str(input("Enter any keyword: "))
+    if stnr=="capitalize":
+        print("Converts the first character to upper case.\nThe capitalize does not take any parameter.")
+        print("Syntax:\nString_name.capitalize()")
+    elif stnr=="casefold":
+        print("Converts string into lower case.\nThe casefold doesn.t take any parameters.")
+        print("Syntax:\nString.casefold()")
+    elif stnr=="center":
+        print("Returns a centered string.\nThe center takes one argument")
+        print("Length: length of the string after padding with the characters.\nFillchar: (optional) characters which need to be padded. If it.s not provided, space is taken as the default argument.")
+        print("Syntax:\nstring.center(length[, fillchar])")
+    elif stnr=="encode":
+        print("Returns an encoded version of the string.\nEncode will take two parameters.they are encoding and errors.")
+        print("Encoding: Specifies the encoding on the basis of which encoding has to be performed.\nErrors: Decides how to handle the errors if they occur, e.g strict raises Unicode error in case of exception and ignore ignores the errors that occurred. There are six types of error response.")
+        print("Syntax:\nEncode(encoding, errors)")
+    elif stnr=="endswitch":
+        print("Returns true if the string ends with the specified value.\nParameters are suffix: Suffix is nothing but a string that needs to be checked.") 
+        print("Start: Starting position from where suffix is needed to be checked within the string.\nEnd: Ending position + 1 from where suffix is needed to be checked within the string.\nPython String endswith method returns True if a string ends with the given suffix, otherwise returns False.")
+        print("Syntax:\nStr.endswith(suffix, start, end)")
+    elif stnr=="expandtabs":
+        print("Sets the tab size of the string.\nParameters are tabsize : Specifies the space that is to be replaced with the '\t' symbol in the string. By default the space is 8.")
+        print("Syntax:\nexpandtabs(space_size)")
+    elif stnr=="find":
+        print("Searches the string for a specified value and returns the position of where it was found.\nParameters are sub: Substring that needs to be searched in the given string.")
+        print("Start (optional): Starting position where the substring needs to be checked within the string.\nEnd (optional): End position is the index of the last value for the specified range. It is excluded while checking.")
+        print("Syntax:\nStr_obj.find(sub, start, end)")
+    elif stnr=="format":
+        print("Formats specified values in a string.\nParameters are value : Can be an integer, floating point numeric constant, string, characters or even variables.")
+        print("Syntax:\n{ }.format(value)")
+    elif stnr=="format_map":
+        print("Formats specified values in a string.\nHere z is a variable in which the input dictionary is stored and string is the key of the input dictionary.")
+        print("Input_dict: Takes a single parameter which is the input dictionary.")
+        print("Syntax:\nString.format_map(z)")
+    elif stnr=="isupper":
+        print("Returns True if all characters in the string are upper case.\nIsupper does not take any parameters.")
+        print("Syntax:\nString.isupper()")
+    elif stnr=="islower":
+        print("Returns True if all characters in the string are lower case.\nIslower does not take any parameters.")
+        print("Syntax:\nString.islower()")
+    elif stnr=="join":
+        print("Joins the elements of an iterable to the end of the string.\nParameters are Iterable – objects capable of returning their members one at a time. Some examples are List, Tuple, String, Dictionary, and Set.")
+        print("Syntax:\nString_name.join(iterable)")
+    elif stnr=="upper":
+        print("Converts a string into upper case.\nUpper does not take any parameters.")
+        print("Syntax:\nString.upper()")
+    elif stnr=="lower":
+        print("Converts a string into lower case.\nLower does not take any parameters")
+        print("Syntax:\nString.lower().")
+    elif stnr=="replace":
+        print("Returns a string where a specified value is replaced with a specified value.\nParameters are old – old substring you want to replace.")
+        print("New – new substring which would replace the old substring.\nCount – (Optional ) the number of times you want to replace the old substring with the new substring.")
+        print("Syntax:\nPublic string Replace(char Oldchar, char Newchar) or\nPublic string Replace(string Oldvalue, string Newvalue)")
+    elif stnr=="split":
+        print("Splits the string at the specified separator, and returns a list.")
+        print("Parameters are separator : This is a delimiter. The string splits at this specified separator. If is not provided then any white space is a separator.\nMaxsplit : It is a number, which tells us to split the string into maximum of provided number of times. If it is not provided then the default is -1 that means there is no limit.")
+        print("Syntax:\nStr.split(separator, maxsplit)")
+    elif stnr=="rsplit":
+        print("Splits the string at the specified separator, and returns a list.\nParameters are separator : This is a delimiter. The string splits at this specified separator. If is not provided then any white space is a separator.\nMaxsplit : It is a number, which tells us to split the string into maximum of provided number of times. If it is not provided then the default is -1 that means there is no limit.")
+        print("Syntax:\nStr.rsplit(separator, maxsplit)")
+    elif stnr=="splitines":
+        print("Splits the string at line breaks and returns a list.\nParameters are keepends (optional): When set to True line breaks are included in the resulting list. This can be a number, specifying the position of line break or, can be any Unicode characters, like '\n', '\r', '\r\n', etc as boundaries for strings.")
+        print("Syntax:\nString.splitlines([keepends])")
+    elif stnr=="strip":
+        print("Returns a trimmed version of the string.\nThere is only one optional parameter in it. chars – a string specifying the set of characters to be removed. If the optional chars parameter is not given, all leading and trailing whitespaces are removed from the string.")
+        print("Syntax:\nString.strip([chars])")
+    elif stnr=="swapcase":
+        print("The swapcase method does not takes any parameter.Swaps cases, lower case becomes upper case and vice versa.")
+        print("Syntax:\nString_name.swapcase()\nHere string_name is the string whose cases are to be swapped.")
+    elif stnr=="title":
+        print("Converts the first character of each word to upper case.\nTitle doesn.t accept any parameter.")
+        print("Syntax:\nstr.title()")
+    elif stnr=="translate":
+        print("Returns a translated string.\nparameters are string- Original String.\nHash map- mapping between two characters in the original string.")
+        print("Syntax:\nString.translate(hash map)")
+    elif stnr=="zfill":
+        print("Fills the string with a specified number of 0 values at the beginning.\nParameters are length:length is the length of the returned string from zfill() with 0 digits filled to the leftside.")
+        print("Syntax:\nStr.zfill(length)")
+    else:
+        print("IT is not a string keyword or method or it is a common function.\nFor common functions enter number 10.")
+if(n==3):
+    print("Tuple is a collection which is ordered and unchangeable. Allows duplicate members.\nTuple methods(count,index)")
+    stnr=str(input("Enter any keyword: "))
+    if stnr=="count":
+        print("Returns the number of times a specified value occurs in a tuple.\nParameters are ele: Any element whose occurrence we want to calculate.")
+        print("Syntax:\nTuple.count(ele)")
+    elif stnr=="index":
+        print("Searches the tuple for a specified value and return the position of where it was found.")
+        print("Parameters are element: The element to be searched.\nStart (Optional): The starting index from where the searching is started.\nEnd (Optional): The ending index till where the searching is done.")
+        print("Syntax:\nTuple.index(element,start,end)")
+    else:
+        print("IT is not a tuple keyword or method or it is a common function.\nFor common functions enter number 10.")
+if(n==4):
+    print("Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.\nSet methods are{add,difference,difference update,discard,intersection,intersection update,isdisjoint,issubset,issuperset,symmetric difference,symmetric difference update,union}")
+    stnr=str(input("Enter any keyword: "))
+    if stnr=="add":
+        print("Adds an element to the set.\nParameters are elem: The element that needs to be added to a set.")
+        print("Syntax:\nSet.add(elem)")
+    elif stnr=="difference": 
+        print("Returns a set containing the difference between two or more sets.")
+        print("Syntax:\nSet_A.difference(set_B) for (A - B)\nSet _B.difference(set_A) for (B - A)")
+    elif stnr=="difference update": 
+        print("Removes the items in this set that are also included in another, specified set.") 
+        print("Syntax:\nA.difference_update(B) for (A - B)\nB.difference_update(A) for (B - A)")
+    elif stnr=="discard": 
+        print("Remove the specified item.\nThe discard() method takes exactly one argument.")
+        print("Syntax:\nSet.discard(element)")
+    elif stnr=="intersection": 
+        print("Returns a set, that is the intersection of two other sets.\nParameters are any number of sets can  be passed.")
+        print("Syntax:\nSet1.intersection(set2, set3, set4….)")
+    elif stnr=="intersection update": 
+        print("Removes the items in this set that are not present in other, specified set(s).\nParameters are one or more sets.")
+        print("Syntax:\nSet.intersection_update(set1,set2,set3,………..,set n)")
+    elif stnr=="isdisjoint": 
+        print("Returns whether two sets have a intersection or not.\nparameters are another set to compare with or an iterable (list, tuple, dictionary, and string).")
+        print("Syntax:\nSet1.isdisjoint(set2)")
+    elif stnr=="issubset": 
+        print("Returns whether another set contains this set or not.\nParameters are other_set: any other set to compare with.")
+        print("Syntax:\nSet_obj.issubset(other_set)")
+    elif stnr=="issuperset": 
+        print("Returns whether this set contains another set or not.\nParameters are Any other Set to compare with")
+        print("Syntax:\nA.issuperset(B)")
+    elif stnr=="symmetric difference": 
+        print("Returns a set with the symmetric differences of two sets.\nparameter Takes a single parameter that has to be a set.")
+        print("Syntax:\nSet_A.symmetric_difference(set_B)")
+    elif stnr=="symmetric difference update": 
+        print("Inserts the symmetric differences from this set and another.\nParameters are The symmetric_difference takes a single iterable as an argument. Iterable should contain hashable object.")
+        print("Syntax:\nA.symmetric_difference_update(B) ")
+    elif stnr=="union": 
+        print("Return a set containing the union of sets.\nParameters are zero or more sets")
+        print("Syntax:\nSet1.union(set2, set3, set4….)")
+    else: 
+        print("IT is not a set keyword or method or it is a common function.\nFor common functions enter number 10.")
+if(n==5):
+    print("Dictionary is a collection which is ordered and changeable. No duplicate members.\nDictionary methods{fromkeys,keys,get,items,popitem,setdefault,values}")
+    stnr=str(input("Enter any keyword: "))
+    if stnr=="fromkeys": 
+        print("Returns a dictionary with the specified keys and value.")
+        print("Parameters are seq : The sequence to be transformed into a dictionary.\nVal : Initial values that need to be assigned to the generated keys. Defaults to None.")
+        print("Syntax:\nFromkeys(seq,val)")
+    elif stnr=="keys": 
+        print("Returns a list containing the dictionary's keys.\nKeys method takes no parameters")
+    elif stnr=="get": 
+        print("Returns the value of the specified key.")
+        print("Parameters are key: The key name of the item you want to return the value from.\nValue: (Optional) Value to be returned if the key is not found. The default value is None.")
+        print("Syntax:\nDict.get(key, default=None)")
+    elif stnr=="items": 
+        print("Returns a list containing a tuple for each key value pair.\nItems method takes no parameters")
+        print("Syntax:\nDictionary.items()")
+    elif stnr=="popitem": 
+        print("Removes the last inserted key-value pair.\nPopitem method takes no operators.")
+        print("Syntax:\nDict.popitem()")
+    elif stnr=="setdefault": 
+        print("Returns the value of the specified key. If the key does not exist: insert the key, with the specified value.")
+        print("Setdefault takes two parameters.\nKey – Key to be searched in the dictionary.\nDefault_value(optional) – Key with a value default_value is inserted to the dictionary if key is not in the dictionary. If not provided, the default_value will be None.")
+        print("Syntax:\nDict.setdefault(key,default_value)")
+    elif stnr=="values": 
+        print("Returns a list of all the values in the dictionary.\nValues methods takes no parameters.")
+        print("Syntax:\nDictionary_name.values()")
+    else:
+        print("IT is not a dictionary keyword or method or it is a common function.\nFor common functions enter number 10.")
+if(n==6):
+    print("Files are named locations on disk to store related information. They are used to permanently store data in a non-volatile memory (e.g. hard disk).\nFile methos are[open,close,read,readable,readline,readlines,write,writable,writelines,detach,fileno,flush,isatty,seek,seekable,tell,truncate]")
+    stnr=str(input("Enter any keyword:"))
+    if stnr=="open":
+        print("opens the file.")
+        print('Syntax:\nFile_object = open(r"File_Name","Access_Mode")')
+    elif stnr=="close":
+        print("closes the file.")
+        print("Syntax:\nFile_object = open(File_Name, Access_Mode)")
+    elif stnr=="read":
+        print("returns the file content.")
+        print("Syntax:\nFile.read()")
+    elif stnr=="readable":
+        print("Returns whether the file stream can be read or not.")
+        print("Syntax:\nFile_object.readable()")
+    elif stnr=="readline":
+        print("Returns one line from the file.\nParameters are size − This is the number of bytes to be read from the file.")
+        print("Syntax:\nFileObject.readline(size);")
+    elif stnr=="readlines":
+        print("Returns a list of lines from the file.\nParameters are sizehint − This is the number of bytes to be read from the file.")
+        print("Syntax:\nFileObject.readlines(sizehint);")
+    elif stnr=="write":
+        print("writes the specified string to the file.\nParameters are str − This is the String to be written in the file.")
+        print("Syntax:\nFileObject.write(str)")
+    elif stnr=="writable":
+        print("returns whether the file can be written to or not.")
+        print("Syntax:\nFile_object.writable()")
+    elif stnr=="writelines":
+        print("Writes a list of strings to the file.\nParameters are list: This is the list of texts or byte objects to be inserted.")
+        print("Syntax:\nFile.writelines(list)")
+    elif stnr=="detach":
+        print("Returns the separated raw stream from the buffer.\ndetach takes no parameters.")
+        print("Syntax:\nFile.detach()")
+    elif stnr=="fileno":
+        print("Returns a number that represents the stream, from the operating system's perspective.")
+        print("Syntax:\nFileObject.fileno();")
+    elif stnr=="flush":
+        print("Flushes the internal buffer.")
+        print("Syntax:\nFileObject.flush()")
+    elif stnr=="isatty":
+        print("Returns whether the file stream is interactive or not.")
+        print("Syntax:\nFileObject.isatty();")
+    elif stnr=="seek":
+        print("Change the file position.")
+        print("Parameters are offset − This is the position of the read/write pointer within the file.\nwhence − This is optional and defaults to 0 which means absolute file positioning, other values are 1 which means seek relative to the current position and 2 means seek relative to the file's end.")
+        print("Syntax:\nFileObject.seek(offset[, whence])")
+    elif stnr=="seekable":
+        print("Returns whether the file allows us to change the file position.\nSeekable method does not accept any parameter.")
+        print("Syntax:\nFile_object.seekable()")
+    elif stnr=="tell":
+        print("Returns the current file position.")
+        print("Syntax:\nFileObject.tell()")
+    elif stnr=="truncate":
+        print("Resizes the file to a specified size.\nParameters are size − This is the number of bytes to be read from the file.")
+        print("Syntax:\nFileObject.truncate(size)")
+    else:
+        print("IT is not a file keyword or method or it is a common function.\nFor common functions enter number 10.")
+if(n==7):
+    print("Keywords=[and,as,assert,break,class,continue,def,delelse,else,false,finally,for,from,global,if,import,in,is,lambda,none,nonlocal,raise,return,true,try,not,or,passwhile,with,yield]")
+    stnr=str(input("Enter any keyword:"))
+    if stnr=="and":
+        print("A logical operator.\nThe logical operators are used for conditional statements are true or false.")
+    elif stnr=="as":
+        print("To create an alias.\nAlias means whenever one variable's value is assigned to another value.")
+    elif stnr=="assert":
+        print("For debugging.")
+    elif stnr=="break":
+        print("To break out of a loop.")
+    elif stnr=="class":
+        print("To define a class.")
+    elif stnr=="continue":
+        print("To continue to the next iteration of a loop.")
+    elif stnr=="def":
+        print("To define a function.")
+    elif stnr=="del":
+        print("To delete an object.")
+    elif stnr=="elif":
+        print("Used in conditional statements, same as else if.")
+    elif stnr=="else":
+        print("Used in conditional statements.")
+    elif stnr=="false":
+        print("Boolean value, result of comparison operations.")
+    elif stnr=="finally":
+        print("Used with exceptions, a block of code that will be executed no matter if there is an exception or not.")
+    elif stnr=="for":
+        print(" To create a for loop.")
+    elif stnr=="from":
+        print("To import specific parts of a module.")
+    elif stnr=="global":
+        print("To declare a global variable.")
+    elif stnr=="if":
+        print("To make a conditional statement.")
+    elif stnr=="import":
+        print("To import a module.")
+    elif stnr=="in":
+        print("To check if a value is present in a list, tuple, etc.")
+    elif stnr=="is":
+        print("To test if two variables are equal.")
+    elif stnr=="lambda":
+        print("To create an anonymous function.")
+    elif stnr=="none":
+        print("Represents a null value.")
+    elif stnr=="nonlocal":
+        print("To declare a non-local variable.")
+    elif stnr=="not":
+        print("A logical operator.\nThe logical operators are used for conditional statements are true or false.")
+    elif stnr=="or":
+        print("A logical operator.\nThe logical operators are used for conditional statements are true or false.")
+    elif stnr=="pass":
+        print("A null statement, a statement that will do nothing.")
+    elif stnr=="raise":
+        print("To raise an exception.")
+    elif stnr=="return":
+        print("To exit a function and return a value.")
+    elif stnr=="true":
+        print("Boolean value, result of comparison operations.")
+    elif stnr=="try":
+        print("To make a try...except statement.\nAn exception is an event,which occurs during the execution of a program that disrupts the normal flow of the program's instructions.")
+    elif stnr=="while":
+        print("To create a while loop.")
+    elif stnr=="with":
+        print("Used to simplify exception handling.\nAn exception is an python object that represents an error.")
+    elif stnr=="yield":
+        print("To end a function, returns a generator.")
+    else:
+        print("IT is not a python keyword.\nFor common functions enter number 10.")
+if(n==8):
+    print("In python we give the keywords exceptions by error.so,please enter keyword with error.")
+    print("EX:name--nameerror\nTypes of errors=[arithematicerror,assertionerror,attributeerror,exception,eoferror,floatingpointerror,generatorexit,importerror,indentationerror,indexerror,keyerror,keyboardinterrupt,lookuperror,memoryerror,nameerror,notimplementederror,oserror,overflowerror,referenceerror,systemexit,typeerror,unboundlocalerror,runtimerror,syntaxerror,stopiteration,taberror,systemerror,unicodeerror,unicodeencodeerror,unicodedecodeerror,unicode translate error,valueerror,zerodivisionerror]")   
+    stnr=str("Enter any keyword:")
+    if stnr=="arithmeticerror":
+        print("Raised when an error occurs in numeric calculations.")
+    elif stnr=="assertionerror":
+        print("Raised when an assert statement fails.")
+    elif stnr=="attributeerror":
+        print("Raised when attribute reference or assignment fails.")
+    elif stnr=="exception":
+        print("Base class for all exceptions.")
+    elif stnr=="eoferror":
+        print("Raised when the input method hits an end of file condition (EOF).")
+    elif stnr=="floatingpointerror":
+        print("Raised when a floating point calculation fails.")
+    elif stnr=="generatorexit":
+        print("Raised when a generator is closed (with the close() method).")
+    elif stnr=="importerror":
+        print("Raised when an imported module does not exist.")
+    elif stnr=="indentationerror":
+        print("Raised when indendation is not correct.")
+    elif stnr=="indexerror":
+        print("Raised when an index of a sequence does not exist.")
+    elif stnr=="keyerror":
+        print("Raised when a key does not exist in a dictionary.")
+    elif stnr=="keyboardinterrupt":
+        print("Raised when the user presses Ctrl+c, Ctrl+z or Delete.")
+    elif stnr=="lookuperror":
+        print("Raised when errors raised cant be found.")
+    elif stnr=="memoryerror":
+        print("Raised when a program runs out of memory.")
+    elif stnr=="nameerror":
+        print("Raised when a variable does not exist.")
+    elif stnr=="notimplementederror":
+        print("Raised when an abstract method requires an inherited class to override the method.")
+    elif stnr=="oserror":
+        print("Raised when a system related operation causes an error.")
+    elif stnr=="overflowerror":
+        print("Raised when the result of a numeric calculation is too large.")
+    elif stnr=="referenceerror":
+        print("Raised when a weak reference object does not exist.")
+    elif stnr=="runtimeerror":
+        print("Raised when an error occurs that do not belong to any specific expections.")
+    elif stnr=="stopiteration":
+        print("Raised when the next method of an iterator has no further values.")
+    elif stnr=="syntaxerror":
+        print("Raised when a syntax error occurs.")
+    elif stnr=="taberror":
+        print("Raised when indentation consists of tabs or spaces.")
+    elif stnr=="systemerror":
+        print("Raised when a system error occurs.")
+    elif stnr=="systemexit":
+        print("Raised when the sys.exit function is called.")
+    elif stnr=="typeerror":
+        print("Raised when two different types are combined.")
+    elif stnr=="unboundlocalerror":
+        print("Raised when a local variable is referenced before assignment.")
+    elif stnr=="unicodeerror":
+        print("Raised when a unicode problem occurs.")
+    elif stnr=="unicodeencodeerror":
+        print("Raised when a unicode encoding problem occurs.")
+    elif stnr=="unicodedecodeerror":
+        print("Raised when a unicode decoding problem occurs.")
+    elif stnr=="unicode translate error":
+        print("Raised when a unicode translation problem occurs.")
+    elif stnr=="value error":
+        print("Raised when there is a wrong value in a specified data type.")
+    elif stnr=="zerodivisionerror":
+        print("Raised when the second operator in a division is zero.")
+    else:
+        print("IT is not a error.\U0001F603\U0001F603\U0001F603") 
+if(n==9):
+    print("OOP's Concepts are=[class,objects,encapsulation,polymorphism,inheritance,abstraction,self,constructor,destructor,_init_,overloading,overriding,super]")
+    stnr=str(input("Enter any keyword:"))
+    if stnr=="class":
+        print("A Class is like an object constructor, or a 'blueprint' for creating objects.")
+        print("Syntax:\nclass ClassName:\nClass statement")
+    elif stnr=="objects":
+        print("An Object is an instance of a Class.")
+        print("Syntax:\nobj = MyClass()")
+    elif stnr=="encapsulation":
+        print("It describes the concept of bundling data and methods within a single unit.")
+    elif stnr=="polymorphism":
+        print("polymorphism means the same function name (but different signatures) being used for different types.")
+    elif stnr=="inheritance":
+        print("Inheritance is the capability of one class to derive or inherit the properties from another class.")
+        print("Syntax:\nclass Parent_class:   \nBody of Parent_class\nclass Child_class(Parent_class)    \nBody of Child_class")
+    elif stnr=="abstraction":
+        print("Abstraction is used to hide the internal functionality of the function from the users.")
+        print("Syntax:\nfrom abc import ABC\nclass ClassName(ABC)")
+    elif stnr=="self":
+        print("By using the keyword,we can access the attributes and methods of the class.")
+        print("Syntax:\nSelf.parameter=parameter\nThe parameters are declared in def function.")
+    elif stnr=="Constructor":
+        print("The task of constructors is to initialize(assign values) to the data members of the class when an object of the class is created.\nThe _init_() method is called the constructor and is always called when an object is created.")
+        print("Syntax:\ndef _init_(self):  \n# body of the constructor")
+    elif stnr=="destructor":
+        print("It is called when all references to the object have been deleted i.e when an object is garbage collected.\nThe _del_() method is a known as a destructor")
+        print("Syntax:\ndef _del_(self):   \n# body of destructor")
+    elif stnr=="_init_":
+        print("The method is useful to do any initialization you want to do with your object.")
+        print("Syntax:\ndef_init_(self, parameter)")
+    elif stnr=="overloading":
+        print("overloading is defined as the ability of the function to behave in different ways depend on the number of parameters passed to it like zero, one, two which will depend on how function is defined.")
+        print("Syntax:\n(Examples):a+b,python+is,a*b,python*4")
+    elif stnr=="overriding":
+        print("It is an ability  that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes.")
+    elif stnr=="super":
+        print("The  super function returns objects represented in the parent class and is very useful in  multiple and multilevel inheritances to find which class the child class is extending first.")
+        print("Syntax:\nSuper()._init_(parameters)")
+    else:
+        print("IT is not a OOPS concept.\nFor common functions enter number 10.")
+if(n==10):
+    print("Common methods are=[index,count,copy,pop,remove,clear,update]")
+    stnr=str(input("Enter any keyword:"))
+    if stnr=="index":
+        print("Returns the index of the first element with the specified value.\nThese are the common methods in list and string.")
+        print("Parameters are element – The element whose lowest index will be returned.\nstart (Optional) – The position from where the search begins.\nend (Optional) – The position from where the search ends.")
+        print("Syntax:\nList_name.index(element, start, end)")
+        print("Substring : The string to be searched for.\nBegp(default:0):This function specifies the position from where search has to be started.\nEndp(default:length of string):This function specifies the position from where search has to end.")
+        print("Syntax:\nString_obj.index(substring, begp, endp)")
+    elif stnr=="count":
+        print("Returns the number of elements with the specified value.\nThese are the common methods in list and string.")
+        print("Parameters are object: is the item whose count is to be returned.")
+        print("Syntax:\nList_name.count(object)")
+        print("The count function has one compulsory and two optional parameters.\nMandatory parameter: substring – string whose count is to be found.\nOptional Parameters: start (Optional) – starting index within the string where the search starts.\nend (Optional) – ending index within the string where the search ends.")
+        print("Syntax:\nString.count(substring, start=…, end=…)")
+    elif stnr=="copy":
+        print("Returns a copy of the list or set or dictionary.\nThese are common functions in list,set and dictionary.\nThe copy method doesn't take any parameters.")
+        print("Syntax:\nList.copy()")
+        print("Set_name: Name of the set whose copy we want to generate.")
+        print("Syntax:\nSet_name.copy()\nDict.copy()")
+    elif stnr=="pop":
+        print("Removes the element at the specified position.\nThese are common functions in list,set and dictionary.")
+        print("Parameters are index (optional) – The value at index is popped out and removed. If the index is not given, then the last element is popped out and removed.")
+        print("Syntax:\nList_name.pop(index)\nSet.pop doesn't take any parameter.")
+        print("Syntax:\nSet_obj.pop()")
+        print("Parameters are key:The key whose key-value pair has to be returned and removed.\ndef:The default value to return if specified key is not present.")
+        print("Syntax:\nDict.pop(key,def)")
+    elif stnr=="remove":
+        print("Removes the first item with the specified value.\nThese are common functions in list and set.")
+        print("Parameters are obj: object to be removed from the list.")
+        print("Syntax:\nList_name.remove(obj)")
+        print("Set.remove method takes exactly one argument.")
+        print("Syntax:\nSet.remove(element)")
+    elif stnr=="clear":
+        print("Removes all the elements from the list or set or dictionary.\nThese are common functions in list,set and dictionary.\nThe clear method doesn.t take any parameters")
+        print("Syntax:\nlist.clear()\nSet.clear()\nDict.clear()")
+    elif stnr=="update":
+        print("Update the set with another set, or any other iterable.\nThese are common functions in dictionary and set.\nUpdate method takes either a dictionary or an iterable object of key/value pairs (generally tuples) as parameters.")
+        print("Syntax:\nDict.update([other])")
+        print("Update method takes only a single argument. The single argument can be a set, list, tuples or a dictionary. It automatically converts into a set and adds to the set.")
+        print("Syntax:\nSet1.update(set2)")
+        print("Here set1 is the set in which set2 will be added.")
+    else:
+        print("It is not a python keyword or method or common functions,please check what u have typed.\U0001F621\U0001F621\U0001F621")
+print("THANK YOU FOR USING THE PYTHON HELPDESK.\U0001F601\U0001F601\U0001F601\U0001F601")
